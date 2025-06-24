@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Messagerie RSA chiffrée bidirectionnelle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <h1>Messagerie RSA chiffrée (A ↔ B)</h1>
+
+  <h2>Utilisateur A</h2>
+  <textarea id="messageA" placeholder="Message de A à B"></textarea><br>
+  <button onclick="sendMessageToB()">Envoyer à B</button><br>
+  <p>Message chiffré (A ➝ B) : <span id="encryptedMessageAB"></span></p>
+  <button onclick="decryptMessageFromA()">B déchiffre</button><br>
+  <p>Message déchiffré par B : <span id="decryptedMessageAB"></span></p>
+
+  <hr>
+
+  <h2>Utilisateur B</h2>
+  <textarea id="messageB" placeholder="Message de B à A"></textarea><br>
+  <button onclick="sendMessageToA()">Envoyer à A</button><br>
+  <p>Message chiffré (B ➝ A) : <span id="encryptedMessageBA"></span></p>
+  <button onclick="decryptMessageFromB()">A déchiffre</button><br>
+  <p>Message déchiffré par A : <span id="decryptedMessageBA"></span></p>
+
+
+</body>
+</html>
