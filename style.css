@@ -1,0 +1,81 @@
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6fb;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #2d5be3;
+      letter-spacing: 1px;
+    }
+    h2 {
+      color: #1a3a7c;
+      margin-bottom: 10px;
+    }
+    textarea {
+      width: 95%;
+      max-width: 500px;
+      min-height: 60px;
+      padding: 10px;
+      border: 1px solid #bfc9d9;
+      border-radius: 6px;
+      font-size: 1em;
+      margin-bottom: 10px;
+      background: #fff;
+      resize: vertical;
+      box-sizing: border-box;
+      transition: border 0.2s;
+    }
+    textarea:focus {
+      border: 1.5px solid #2d5be3;
+      outline: none;
+    }
+    button {
+      background: #2d5be3;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 18px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 8px 0;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #1a3a7c;
+    }
+    p {
+      margin: 8px 0 14px 0;
+      font-size: 1em;
+    }
+    span {
+      font-family: 'Fira Mono', 'Consolas', monospace;
+      background: #e9eef7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      word-break: break-all;
+      font-size: 0.98em;
+    }
+    hr {
+      border: none;
+      border-top: 2px solid #e0e6f3;
+      margin: 30px 0;
+      width: 90%;
+    }
+    body > h2, body > textarea, body > button, body > p {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 520px;
+    }
+    @media (max-width: 600px) {
+      textarea, body > h2, body > button, body > p {
+        max-width: 98vw;
+      }
+      h1 {
+        font-size: 1.3em;
+      }
+    }
